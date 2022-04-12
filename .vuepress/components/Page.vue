@@ -59,10 +59,10 @@
           <b-icon-share></b-icon-share>
         </b-link>
       </b-jumbotron>
-      <b-modal ref="shareModal" hide-footer :title="`Share ${token.name} page`">
+      <b-modal ref="shareModal" hide-footer :title="`Compartir ${token.name}`">
         <b-row>
           <b-col lg="12">
-            <b-form-group label="Share link" label-for="tokenLink">
+            <b-form-group label="Compartir link" label-for="tokenLink">
               <b-form-input
                 id="tokenLink"
                 name="tokenLink"
@@ -164,12 +164,12 @@ export default {
     },
     async addToMetaMask() {
       if (!this.metamask.installed) {
-        alert("Please install MetaMask and try again!");
+        alert("Por favor instala metamask e intenta de nuevo");
         return;
       } else {
         if (this.metamask.netId !== this.network.current.id) {
           alert(
-            `Your MetaMask in on the wrong network. Please switch on ${this.network.current.name} and try again!`
+            `MetaMask se encuentra en la red incorrecta. Cambia de red a ${this.network.current.name} e intenta de nuevo!`
           );
           return;
         }
@@ -208,10 +208,10 @@ export default {
 
       this.share.shortLink = await this.shorten(this.share.tokenLink);
 
-      this.share.facebook = `https://www.facebook.com/sharer.php?u=${this.share.shortLink}&quote=Discover more about ${this.token.name} (${this.token.symbol}).`; // eslint-disable-line max-len
-      this.share.twitter = `https://twitter.com/intent/tweet?url=${this.share.shortLink}&text=Discover more about ${this.token.name} (${this.token.symbol}).`; // eslint-disable-line max-len
-      this.share.telegram = `https://t.me/share/url?url=${this.share.shortLink}&text=Discover more about ${this.token.name} (${this.token.symbol}).`; // eslint-disable-line max-len
-      this.share.whatsapp = `https://wa.me/?text=Discover more about ${this.token.name} (${this.token.symbol}). ${this.share.shortLink}`; // eslint-disable-line max-len
+      this.share.facebook = `https://www.facebook.com/sharer.php?u=${this.share.shortLink}&quote=Descubre mas sobre ${this.token.name} (${this.token.symbol}).`; // eslint-disable-line max-len
+      this.share.twitter = `https://twitter.com/intent/tweet?url=${this.share.shortLink}&text=Descubre mas sobre ${this.token.name} (${this.token.symbol}).`; // eslint-disable-line max-len
+      this.share.telegram = `https://t.me/share/url?url=${this.share.shortLink}&text=Descubre mas sobre ${this.token.name} (${this.token.symbol}).`; // eslint-disable-line max-len
+      this.share.whatsapp = `https://wa.me/?text=Descubre mas sobre ${this.token.name} (${this.token.symbol}). ${this.share.shortLink}`; // eslint-disable-line max-len
 
       this.$forceUpdate();
 
