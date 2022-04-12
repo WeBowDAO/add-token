@@ -43,7 +43,7 @@
           <span class="text-muted token-address">{{ token.address }}</span>
         </h6>
         <hr class="my-4" />
-        <b-link @click="addToMetaMask" class="btn btn-success my-2">
+        <b-link @click="addToMetaMask" class="btn btn-success my-2 btn-custom">
           <b-icon-plus-circle-fill></b-icon-plus-circle-fill>
           Agregar a MetaMask
         </b-link>
@@ -206,7 +206,7 @@ export default {
           `/page/?hash=${tokenHash}&network=${this.currentNetwork}`
         ); // eslint-disable-line max-len
 
-      this.share.shortLink = await this.shorten(this.share.tokenLink);
+      this.share.shortLink = "https://webowdao.github.io/watch-token";
 
       this.share.facebook = `https://www.facebook.com/sharer.php?u=${this.share.shortLink}&quote=Descubre mas sobre ${this.token.name} (${this.token.symbol}).`; // eslint-disable-line max-len
       this.share.twitter = `https://twitter.com/intent/tweet?url=${this.share.shortLink}&text=Descubre mas sobre ${this.token.name} (${this.token.symbol}).`; // eslint-disable-line max-len
