@@ -3,29 +3,23 @@ component: Page
 title: WeBowDAO
 meta:
   - property: twitter:title
-    content: WatchToken | Create a Widget for your ERC20 or BEP20 Token
+    content: WeBow Token
   - property: og:title
-    content: WatchToken | Create a Widget for your ERC20 or BEP20 Token
+    content: WeBow Token
   - property: twitter:description
-    content: Create a Widget for your ERC20 or BEP20 Token and share it with your users. Add your Token to DApp browsers or MetaMask both on Ethereum, Binance Smart Chain or Polygon Network.
+    content: Agrega WBW a tu billetera
   - property: og:description
-    content: Create a Widget for your ERC20 or BEP20 Token and share it with your users. Add your Token to DApp browsers or MetaMask both on Ethereum, Binance Smart Chain or Polygon Network.
+    content: Agrega WBW a tu billetera
   - property: og:url
-    content: https://vittominacori.github.io/watch-token/
+    content: https://webowdao.github.io/watch-token/
 ---
 
 # WeBowDAO
 
-Create a Widget for your ERC20 or BEP20 Token. Add your Token to DApp browsers or MetaMask both on Ethereum, Binance Smart Chain or Polygon Network.
-
-Enter your ERC20 or BEP20 Token details, create a Widget and share it with your users.
-
 ## Try it
 
-https://vittominacori.github.io/watch-token/
+https://webowdao.github.io/watch-token/
 
 ## License
 
 Code released under the [MIT License](./LICENSE).
-
-

@@ -1,23 +1,9 @@
 const vars = require("./.env.json");
 
 module.exports = {
-  description:
-    "Create a Widget for your ERC20 or BEP20 Token and share it with your users. Add your Token to DApp browsers or MetaMask both on Ethereum, Binance Smart Chain or Polygon Network.",
+  description: "Agrega WBW a tu billetera",
   base: "/watch-token/",
-  plugins: [
-    [
-      "@vuepress/google-analytics",
-      {
-        ga: vars.gaId,
-      },
-    ],
-    [
-      "vuepress-plugin-facebook-pixel",
-      {
-        pixelId: vars.fbPixelId,
-      },
-    ],
-  ],
+  plugins: [],
   head: [
     ["link", { rel: "shortcut icon", href: "/favicon.ico" }],
     [
@@ -32,7 +18,7 @@ module.exports = {
       "meta",
       {
         property: "og:url",
-        content: "https://vittominacori.github.io/watch-token",
+        content: "https://webowdao.github.io/watch-token",
       },
     ],
     [
@@ -40,7 +26,7 @@ module.exports = {
       {
         property: "og:image",
         content:
-          "https://vittominacori.github.io/watch-token/assets/images/watch-token.png",
+          "https://webowdao.github.io/watch-token/assets/images/watch-token.png",
       },
     ], // eslint-disable-line max-len
     ["meta", { property: "twitter:card", content: "summary_large_image" }],
@@ -49,14 +35,14 @@ module.exports = {
       {
         property: "twitter:image",
         content:
-          "https://vittominacori.github.io/watch-token/assets/images/watch-token.png",
+          "https://webowdao.github.io/watch-token/assets/images/watch-token.png",
       },
     ], // eslint-disable-line max-len
     [
       "meta",
       {
         property: "twitter:title",
-        content: "WatchToken | Create a Widget for your ERC20 or BEP20 Token",
+        content: "WeBow Token",
       },
     ],
     ["script", { src: "/assets/js/web3.min.js" }],
