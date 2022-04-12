@@ -12,7 +12,7 @@ export default {
       },
       network: {
         default: config.defaultNetwork,
-        current: "mainnet",
+        current: null,
         map: {
           1: "mainnet",
           // 3: "ropsten",
