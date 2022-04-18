@@ -132,7 +132,7 @@ export default {
     async getToken() {
       const tokenInfo = {
         address: "0xdbc6b1cf3042d19c300a0b618b3d59d256d7a448",
-        logo: "https://uca66d3d273c47e9b70101076794.previews.dropboxusercontent.com/p/thumb/ABhplioDyi87weyd9H6zg2Ww3Wlg0WeR-rU-5LNlR8ObyHQDflNMwhxUXqNJ7iZuNifXw4bsRHpwLoouoaWkv11aSrYPzLRPakboimGSaiAGBLRVYmN9ocZ6nT85tF8c_eREwYvLmWzTJoSxZAXJ3PRwdcyCJqzTZYPh0dvWu8-ZOV6chG-sryLjJqA3mQapegqawLbfL-KBWA7mH14W2ScOimti6V_PQXHE5Qr8RmTntDF4NlIvwe8tBJu50womfbaKIxcs0Yn28ufX5xRPXlXR8rnrzE-URUTuZRUOm0u-r5txBFAcrZ3AIYtS01BAhntu4ymn4wNjwe_NM9ljnVW6CH6G7YUJh4r6pyeYL8Met7mXPGrmOUMbdtowwniMFZk/p.png",
+        logo: "https://webowdao.github.io/watch-token/assets/images/logo.png",
       };
 
       this.token.address = tokenInfo.address;
